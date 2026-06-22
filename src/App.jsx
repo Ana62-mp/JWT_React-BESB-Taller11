@@ -5,6 +5,8 @@ import Registrar from "./pages/Registrar";
 import Perfil from "./pages/Perfil";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./index.css";
+import Vehiculos from "./pages/Vehiculos";
+import GestionAmigurumis from "./pages/GestionAmigurumis";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
 
           <Route element={<ProtectedRoute />}>
             <Route path="/perfil" element={<Perfil />} />
+            <Route path="/vehiculos" element={<Vehiculos />} />
+            <Route path="/amigurumis" element={<GestionAmigurumis />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/login" replace />} />

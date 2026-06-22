@@ -65,6 +65,12 @@ function Perfil() {
           <button className="btn-logout" onClick={manejarLogout}>
             Cerrar sesión
           </button>
+          <button className="btn-logout" onClick={()=>navigate("/vehiculos")}>
+            Ir a vehículos
+          </button>
+          <button className="btn-logout" onClick={()=>navigate("/amigurumis")}>
+            Ir a Amigurumis
+          </button>
         </div>
 
         <div className="profile-card">
